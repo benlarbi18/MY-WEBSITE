@@ -1,13 +1,3 @@
-
-const button = document.getElementById('action-btn');
-const textElement = document.getElementById('declaration-text');
-
-button.addEventListener('click', function() {
-textElement.textContent = "Stand firm in faith! Victory is assured.";
-button.textContent = "Amen & Amen!";
-button.style.backgroundColor = "#10b981"; 
-});
-
 const btn1 = document.getElementById('action-btn-1');
 const btn2 = document.getElementById('action-btn-2');
 const btn3 = document.getElementById('action-btn-3');
