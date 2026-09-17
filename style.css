@@ -85,6 +85,7 @@ p {
 body {
   padding-top: 60px;
 }
+
 @media (max-width: 600px) {
   .faith-card {
     max-width: 85%; /* Take up most of the phone screen width */
