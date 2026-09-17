@@ -85,3 +85,17 @@ p {
 body {
   padding-top: 60px;
 }
+@media (max-width: 600px) {
+  .faith-card {
+    max-width: 85%; /* Take up most of the phone screen width */
+    padding: 20px;   /* Reduce padding so text breathes better on small screens */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Slightly smaller header for mobile */
+  }
+
+  p {
+    font-size: 1rem;   /* Slightly smaller body text for mobile */
+  }
+}
