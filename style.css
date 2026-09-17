@@ -53,3 +53,35 @@ p {
 .amen-btn:hover {
     background-color: #0ea5e9;
     }
+
+/* Global Navigation Bar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1e293b;
+  border-bottom: 1px solid #334155;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #38bdf8;
+}
+
+/* Add a little padding to the body so the fixed navbar doesn't overlap your card */
+body {
+  padding-top: 60px;
+}
