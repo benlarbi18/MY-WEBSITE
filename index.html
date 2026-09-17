@@ -3,14 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html>
-  <head>
     <title>My Faith Card</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
@@ -72,16 +66,26 @@
         background-color: #0ea5e9;
       }
     </style>
-  </head>
-  <body>
-
+</head>
+<body>
     <div class="faith-card">
       <h1>My Declaration</h1>
-      <p>I am a believer. I am resilient. I am a soldier in the army of Jesus Christ, my commander.</p>
-      <button class="amen-btn">Amen!</button>
+      <p id="declaration-text">I am a believer. I am resilient. I am a soldier in the army of Jesus Christ, my commander.</p>
+      <button class="amen-btn" id="action-btn">Amen!</button>
     </div>
 
-  </body>
-</html>
+    <script>
+      // 1. Grab the button and the paragraph from our HTML
+      const button = document.getElementById('action-btn');
+      const textElement = document.getElementById('declaration-text');
+
+      // 2. Listen for a "click" event on the button
+      button.addEventListener('click', function() {
+        // 3. Change the paragraph text dynamically when clicked!
+        textElement.textContent = "Stand firm in faith! Victory is assured.";
+        button.textContent = "Amen & Amen!";
+        button.style.backgroundColor = "#10b981"; // Turns the button a success green color!
+      });
+    </script>
 </body>
 </html>
