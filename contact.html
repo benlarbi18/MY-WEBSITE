@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>About Me - My Faith Journey</title>
+    <title>Contact Me - Get in Touch</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
     <nav class="navbar">
       <a href="index.html">Home</a>
@@ -17,10 +18,19 @@
     </nav>
 
     <main class="card-container">
-      <div class="faith-card">
-        <h1>About My Journey</h1>
-        <p>Building this website is a step of faith and discipline. Every line of code represents growth, focus, and dedication to a higher standard.</p>
-        <a href="index.html" class="amen-btn" style="text-decoration: none; display: inline-block;">Back to Home</a>
+      <div class="faith-card" style="width: 350px;">
+        <h1>Get in Touch</h1>
+        <p>Have a question or want to connect? Drop a message below.</p>
+
+        <form id="contact-form">
+          <input class="contact-form-input" type="text" placeholder="Your Name" required>
+          
+          <input class="contact-form-input" type="email" placeholder="Your Email" required>
+          
+          <textarea class="contact-form-textarea" placeholder="Your Message" rows="4" required></textarea>
+          
+          <button  type="submit" class="amen-btn">Send Message</button>
+        </form>
       </div>
     </main>
 

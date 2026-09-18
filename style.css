@@ -132,6 +132,35 @@ body {
   margin-top: auto;
 }
 
+#contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.contact-form-input,
+.contact-form-textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: 'Rubik', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form-textarea {
+  resize: none; 
+}
+
+.amen-btn {
+  width: 100%;
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   .faith-card {
     max-width: 85%;
