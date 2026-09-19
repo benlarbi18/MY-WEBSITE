@@ -104,6 +104,7 @@ body {
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 5rem
 }
 
 
@@ -161,6 +162,66 @@ body {
   cursor: pointer;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--card-bg, #1e293b); /* Matches your existing theme */
+  position: relative;
+}
+
+.nav-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--card-bg, #1e293b);
+  
+  /* Make it fixed at the top */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding doesn't push it wider than the screen */
+  z-index: 1000; /* Keeps it layered safely above all other content */
+}
+
 @media (max-width: 600px) {
   .faith-card {
     max-width: 85%;
@@ -173,5 +234,26 @@ body {
 
   p {
     font-size: 1rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none; /* Hidden initially */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--card-bg, #1e293b);
+    padding: 1.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 }

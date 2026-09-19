@@ -12,9 +12,18 @@
 
   <body>
     <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+        <div class="nav-brand">My Portfolio</div>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
     <main class="card-container">
@@ -22,15 +31,18 @@
         <h1>Get in Touch</h1>
         <p>Have a question or want to connect? Drop a message below.</p>
 
-        <form id="contact-form">
-          <input class="contact-form-input" type="text" placeholder="Your Name" required>
+        <form id="contact-form" class="contact-form">
+          <input id="name-input" class="contact-form-input" type="text" placeholder="Your Name" required>
           
-          <input class="contact-form-input" type="email" placeholder="Your Email" required>
+          <input id="email-input" class="contact-form-input" type="email" placeholder="Your Email" required>
           
-          <textarea class="contact-form-textarea" placeholder="Your Message" rows="4" required></textarea>
+          <textarea id="message-input" class="contact-form-textarea" placeholder="Your Message" rows="4" required></textarea>
           
           <button  type="submit" class="amen-btn">Send Message</button>
         </form>
+
+        <p id="success-message" style="display: none; color: var(--accent-color); font-weight: 500; text-align: center; margin-top: 10px;"></p>
+
       </div>
     </main>
 
@@ -38,5 +50,6 @@
       <p>&copy; 2026 My Portfolio Website. Built with Faith & Code.</p>
     </footer>
 
+    <script src="script.js"></script>
   </body>
 </html>
